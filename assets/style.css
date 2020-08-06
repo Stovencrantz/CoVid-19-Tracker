@@ -10,6 +10,10 @@ th, td, tr{
 }
 /* State Card Styling */
 
+h4{
+    color: green;
+}
+
 #stateSelected #positiveIncrease #hospitalizeIncrease 
 #totalPosCases #currentOnVentilator #confirmedDeaths{
     background-color: white;
@@ -75,3 +79,25 @@ body {
       90% { transform: translate(10%,5%) }
       100% { transform: translate(5%,0) }
   }
+
+  /* Dropdown */
+  /* .dropdown-menu{
+      
+  } */
+  .btnText{
+      font-weight: bold;
+  }
+  button {
+    color: green;
+    background-color: black;
+    border: 1px solid green;
+    border-radius: 4px;
+    padding: 0 15px;
+    cursor: pointer;
+    height:32px;
+    font-size:14px;
+    transition: all 0.2s ease-in-out;
+    }
+    button:hover {
+    transform: scale(1.1);
+    }
