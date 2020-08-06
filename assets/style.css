@@ -9,10 +9,9 @@ th, td, tr{
     color: white;
 }
 /* State Card Styling */
-p{
-    color: green;
-}
-#stateSelected{
+
+#stateSelected #positiveIncrease #hospitalizeIncrease 
+#totalPosCases #currentOnVentilator #confirmedDeaths{
     background-color: white;
     font-weight: bold;
 }
@@ -22,18 +21,11 @@ p{
 }
 .thead{
     min-width: 100%;
-    background-color: lightgrey;
+    color: white;
+
 }
 
-newRow.append($("<td scope = 'col'>").text(response.Countries[i].Country));
-    newRow.append($("<td scope = 'col'>").text(response.Countries[i].TotalRecovered).css("color","green"));
-    newRow.append($("<td scope = 'col'>").text(response.Countries[i].TotalDeaths).css("color", "red"));
-    newRow.append($("<td scope = 'col'>").text(response.Countries[i].NewConfirmed).css("color", "orange"));
-    newRow.append($("<td scope = 'col'>").text(response.Countries[i].TotalConfirmed).css("color", "yellow"));
-    newRow.append($("<td scope = 'col'>").text(response.Countries[i].NewDeaths).css("color", "red"));
-    newRow.append($("<td scope = 'col'>").text(response.Countries[i].Total).css("color", "orange"));
-
-Styling for map window */
+/* Styling for map window */ 
 #stateCard{
     max-height: 500px;
 }
