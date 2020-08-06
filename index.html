@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+<link rel="stylesheet" href="./assets/style.css">
+
+<title>Title</title>
+<body>
+  <div class="bg"></div>
+
+  <header class="bg-danger">
+    <p class="projectName text-center">COVID-19 TRACKER</p>
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id = "dropdownMenuButton" data-toggle="dropdown"
+      aria-haspopup="true" aria-expanded="false">Dropdown Button</button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style = "max-height: 200px; overflow-y: auto;">
+      </div>
+    </div>
+  </header>
+  <div class="container">
+    <div class="row" id = "containerRow_1">
+      <div class="col-md-4"> <!-- This column contains content for our state label and state statistics-->
+        <div class="card" >
+          <!-- state label -->
+          <div class="card-header text-center" id = "stateSelected">
+            State
+          </div>
+          <!-- state stats -->
+          <div class="card-body text-center" id="stateCard">State Stats
+            <p>Positive Increases: <span id = "positiveIncrease" style = "font-weight: bold"></span></p>
+            <p>Hospitalization Increase: <span id = "hospitalizeIncrease" style = "font-weight: bold"></span></p>
+            <p>Total Positive Cases: <span id = "totalPosCases" style = "font-weight: bold"></span></p>
+            <p>Individuals on Ventilator: <span id = "currentOnVentilator" style = "font-weight: bold"></span></p>
+            <p>Confirmed Deaths: <span id = "confirmedDeaths" style = "font-weight: bold"></span></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-8">
+        <div class="card ">
+          <!-- world table -->
+          <div class="card-body text-center" id="worldCard">
+            <table class = "table">
+              <thead class = "thead">
+                <tr scope = "row">
+                  <th scope = "col" class = "countryNameScope">Country Name</th>
+                  <th scope = "col">Total Recovered</th>
+                  <th scope = "col">Total Deaths</th>
+                  <th scope = "col"> New Confirmed</th> 
+                  <th scope = "col">Total Confirmed</th>
+                  <th scope = "col"></th>New Deaths</th>
+                </tr>
+              </thead>
+              <tbody class="countryName">
+                <!-- populated from js -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row" id = "containerRow_2">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-body bg-primary text-center" id = "mapCard">
+            <div class="map" id ="map"></div>
+          </div>
+      </div>
+    </div>
+  </div>
+    
+    
+  
+    
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.4.3/build/ol.js"></script>
+<script src = "./assets/script.js"></script>
+<script src = "./assets/Worlddata.js"></script>
+<script src = "./assets/openLayers.js"></script>
+</body>
+</html>
