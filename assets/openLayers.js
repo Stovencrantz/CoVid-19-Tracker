@@ -1,3 +1,4 @@
+
 window.onload = init;
 
 
@@ -19,15 +20,15 @@ function init(){
     
   });
 
-  const statesGeoJSON = new ol.layer.VectorImage({
-    source: new ol.source.Vector({
-      url: "assets/data/map.geojson",
-      format: new ol.format.GeoJSON()
-    }),
-    visible: true,
-    title: "ColoradoVeiwGeoJSON"
-  })
-  map.addLayer(statesGeoJSON);
+  // const statesGeoJSON = new ol.layer.VectorImage({
+  //   source: new ol.source.Vector({
+  //     url: "assets/data/usaStates.geojson",
+  //     format: new ol.format.GeoJSON()
+  //   }),
+  //   visible: true,
+  //   title: "ColoradoVeiwGeoJSON"
+  // })
+  // map.addLayer(statesGeoJSON);
 
   map.on("click", function(e){
     console.log(e.coordinate);
