@@ -21,16 +21,16 @@ $.ajax({
     var newRow = $("<tr scope = 'row'>");
 
     newRow.append($("<td scope = 'col'>").text(response.Countries[i].Country));
-    newRow.append($("<td scope = 'col'>").text(response.Countries[i].TotalRecovered));
-    newRow.append($("<td scope = 'col'>").text(response.Countries[i].TotalDeaths));
-    newRow.append($("<td scope = 'col'>").text(response.Countries[i].NewConfirmed));
-    newRow.append($("<td scope = 'col'>").text(response.Countries[i].TotalConfirmed));
-    newRow.append($("<td scope = 'col'>").text(response.Countries[i].NewDeaths));
-    newRow.append($("<td scope = 'col'>").text(response.Countries[i].Total));
+    newRow.append($("<td scope = 'col'>").text(response.Countries[i].TotalRecovered).css("color", "green"));
+    newRow.append($("<td scope = 'col'>").text(response.Countries[i].TotalDeaths).css("color", "red"));
+    newRow.append($("<td scope = 'col'>").text(response.Countries[i].NewConfirmed).css("color", "orange"));
+    newRow.append($("<td scope = 'col'>").text(response.Countries[i].TotalConfirmed).css("color", "yellow"));
+    newRow.append($("<td scope = 'col'>").text(response.Countries[i].NewDeaths).css("color", "red"));
+    newRow.append($("<td scope = 'col'>").text(response.Countries[i].Total).css("color", "orange"));
     countryTableEl.append(newRow);
     console.log(response.Countries.length)
   }
-
+  
    country =$(this).text();
 
 
