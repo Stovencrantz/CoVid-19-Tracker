@@ -9,10 +9,13 @@ th, td, tr{
     color: white;
 }
 /* State Card Styling */
-p{
+
+h4{
     color: green;
 }
-#stateSelected{
+
+#stateSelected #positiveIncrease #hospitalizeIncrease 
+#totalPosCases #currentOnVentilator #confirmedDeaths{
     background-color: white;
     font-weight: bold;
 }
@@ -22,18 +25,11 @@ p{
 }
 .thead{
     min-width: 100%;
-    background-color: lightgrey;
+    color: white;
+
 }
 
-newRow.append($("<td scope = 'col'>").text(response.Countries[i].Country));
-    newRow.append($("<td scope = 'col'>").text(response.Countries[i].TotalRecovered).css("color","green"));
-    newRow.append($("<td scope = 'col'>").text(response.Countries[i].TotalDeaths).css("color", "red"));
-    newRow.append($("<td scope = 'col'>").text(response.Countries[i].NewConfirmed).css("color", "orange"));
-    newRow.append($("<td scope = 'col'>").text(response.Countries[i].TotalConfirmed).css("color", "yellow"));
-    newRow.append($("<td scope = 'col'>").text(response.Countries[i].NewDeaths).css("color", "red"));
-    newRow.append($("<td scope = 'col'>").text(response.Countries[i].Total).css("color", "orange"));
-
-Styling for map window */
+/* Styling for map window */ 
 #stateCard{
     max-height: 500px;
 }
@@ -83,3 +79,25 @@ body {
       90% { transform: translate(10%,5%) }
       100% { transform: translate(5%,0) }
   }
+
+  /* Dropdown */
+  /* .dropdown-menu{
+      
+  } */
+  .btnText{
+      font-weight: bold;
+  }
+  button {
+    color: green;
+    background-color: black;
+    border: 1px solid green;
+    border-radius: 4px;
+    padding: 0 15px;
+    cursor: pointer;
+    height:32px;
+    font-size:14px;
+    transition: all 0.2s ease-in-out;
+    }
+    button:hover {
+    transform: scale(1.1);
+    }
